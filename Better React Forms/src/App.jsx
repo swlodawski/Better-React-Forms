@@ -203,9 +203,39 @@ function App() {
            onChange={(e) =>
               selectedOption(e.target.value)
            }>
-            <option value=""></option>
+            <option value=""
+            disabled
+            selected={selectedOption === ""}>
+              Select Answer
+            </option>
+
+            <optgroup label="Beginers">
+              <option value="1">HTML</option>
+              <option value="2">CSS</option>
+              <option value="3">JavaScript</option>
+            </optgroup>
+            <optgroup label='Advance'>
+            <option value="4">React</option>
+            <option value="5">Node</option>
+            <option value="6">Express</option>
+            <option value="t">MongoDB</option>
+            </optgroup>
            </select>
-           
+           <label for="about">About</label>
+           <textarea
+          name="about" 
+          id="about"
+          cols="30"
+          rows="10"
+          onChange={(e) =>
+            setAbout(e.target.value)
+          }
+          placeholder='About Yourself'
+          required></textarea>
+          <button
+          type='reset'
+          value='reset'
+          onChange={() => handleSubmit(e)}>Submit</button>
         </form>
       </fieldset>
     </div>
