@@ -62,7 +62,7 @@ function App() {
       <h1>React Forms</h1>
       <fieldset>
         <form action="#" method='get'>
-          <label for="firstname">First Name</label>
+          <label htmlFor="firstname">First Name</label>
           <input 
           type="text"
           name='firstname'
@@ -73,7 +73,7 @@ function App() {
           }
           placeholder='Enter First Name' required />
 
-          <label for="lastname">Last Name</label>
+          <label htmlFor="lastname">Last Name</label>
           <input 
           type="text"
           name='lastname'
@@ -84,7 +84,7 @@ function App() {
           }
           placeholder='Enter Last Name' required />
 
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input 
           type="text"
           name='email'
@@ -95,7 +95,7 @@ function App() {
           }
           placeholder='Enter Email' required />
 
-          <label for="tel">Contact</label>
+          <label htmlFor="tel">Contact</label>
           <input 
           type="tel"
           name='contact'
@@ -106,7 +106,7 @@ function App() {
           }
           placeholder='Enter Mobile Number' required />
 
-          <label for="gender">Gender</label>
+          <label htmlFor="gender">Gender</label>
           <input 
           type="radio"
           name='gender'
@@ -137,7 +137,7 @@ function App() {
           } />
           Other
 
-          <label for="lang">Your Best Subject</label>
+          <label htmlFor="lang">Your Best Subject</label>
           <input 
           type="checkbox"
           name='lang'
@@ -171,7 +171,7 @@ function App() {
           />
           Physics
 
-          <label for="file">Upload Resume</label>
+          <label htmlFor="file">Upload Resume</label>
           <input
           type="file"
           name='file'
@@ -183,7 +183,7 @@ function App() {
           required
            />
 
-           <label for="url">Enter url</label>
+           <label htmlFor="url">Enter url</label>
            <input 
            type="url"
            name='url'
@@ -195,7 +195,7 @@ function App() {
            required
             />
 
-          <label for="url">Select Your Choice</label>
+          <label htmlFor="url">Select Your Choice</label>
            <select 
            type="select"
            name='select'
@@ -205,7 +205,7 @@ function App() {
            }>
             <option value=""
             disabled
-            selected={selectedOption === ""}>
+            defaultValue={selectedOption === ""}>
               Select Answer
             </option>
 
@@ -221,7 +221,7 @@ function App() {
             <option value="t">MongoDB</option>
             </optgroup>
            </select>
-           <label for="about">About</label>
+           <label htmlFor="about">About</label>
            <textarea
           name="about" 
           id="about"
