@@ -135,6 +135,77 @@ function App() {
           onChange={(e) =>
             setGender(e.target.value)
           } />
+          Other
+
+          <label for="lang">Your Best Subject</label>
+          <input 
+          type="checkbox"
+          name='lang'
+          id='english'
+          checked={subjects.english === true}
+          onChange={(e) => 
+            handleSubjectChange("english")
+          }
+           />
+          English
+
+          <input 
+          type="checkbox"
+          name='lang'
+          id='math'
+          checked={subjects.maths === "true"}
+          onChange={(e) =>
+            handleSubjectChange("math")
+          }
+          />
+          Maths
+
+          <input 
+          type="checkbox"
+          name='lang'
+          id='physics'
+          checked={subjects.physics === "true"}
+          onChange={(e) =>
+            handleSubjectChange("physics")
+          }
+          />
+          Physics
+
+          <label for="file">Upload Resume</label>
+          <input
+          type="file"
+          name='file'
+          id='file'
+          onChange={(e) =>
+            setResume(e.target.files[0])
+          }
+          placeholder='Enter File To Upload'
+          required
+           />
+
+           <label for="url">Enter url</label>
+           <input 
+           type="url"
+           name='url'
+           id='url'
+           onChange={(e) =>
+              setUrl(e.target.value)
+           }
+           placeholder='Enter a url'
+           required
+            />
+
+          <label for="url">Select Your Choice</label>
+           <select 
+           type="select"
+           name='select'
+           id='select'
+           onChange={(e) =>
+              selectedOption(e.target.value)
+           }>
+            <option value=""></option>
+           </select>
+           
         </form>
       </fieldset>
     </div>
