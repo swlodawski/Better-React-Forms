@@ -203,6 +203,12 @@ function App() {
            onChange={(e) =>
               selectedOption(e.target.value)
            }>
+
+    {/* App.jsx:204 Uncaught TypeError: selectedOption is not a function
+    at onChange (App.jsx:204:15)
+    chunk-HCIN4FJ4.js?v=68a32566:3754 Uncaught TypeError: selectedOption is not a function
+    at onChange (App.jsx:204:15) Check this error out. It deals with the tech lang selection component*/}
+
             <option value=""
             disabled
             defaultValue={selectedOption === ""}>
